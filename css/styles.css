@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root {
+    --LightGray: hsl(212, 45%, 89%);
+    --White: hsl(0, 0%, 100%);
+    --GrayishBlue: hsl(220, 15%, 55%);
+    --DarkBlue: hsl(218, 44%, 22%);
+  }
+  
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    background: var(--LightGray);
+    font-family: 'Outfit', sans-serif;
+    line-height: 1.5;
+     /* To center the whole content horizontally we use below 2 properties */
+     display: flex;
+     justify-content: center; 
+     /* Use to select full height of main  */
+     min-height:100vh;
+  }
+
+  
+.card{
+    background-color: var(--White);
+    width: 332px;
+    /* We need min-height:100vh in parent container to use it */
+    /* To center the content vertically */
+    margin:auto;
+
+    /* To center the text in its child container */
+    text-align:center;
+    border-radius:20px;
+    box-shadow: 0 5px 18px 0 rgba(146, 146, 146, 0.35)
+}
+
+.image-container{
+    /* Center image horizontally */
+    display:flex; 
+    justify-content: center;
+    /* Use padding to get extra space around image */
+    padding:1rem;
+}
+
+img{
+    border-radius:10px;
+    /* If image comes out of the container
+    use width 100% to fit image in its container */
+    width:100%;
+}
+
+.description{
+    padding: 10px 18px;
+}
+
+.description h1{
+    color: var(--DarkBlue);
+    font-size: 1.4rem;
+    padding-bottom: 1rem;
+}
+
+.description p {
+color: var(--GrayishBlue);
+margin-bottom:2rem;
+font-size: 1rem;
+}
